@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+   <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+   <div class="topnav">
+      <a href="index.html" title="Home"><img src="images/home.png" height="16"
+            alt="A picture used to represent the link to home (arbitrary home clipart)" title="Home"></a>
+      <a href="aboutme.html" title="About Me"> About Me</a>
+      <a href="archive.html" title="Archive"> Archive</a>
+      <a class="active" href="blog.html" title="Blog"> Blog</a>
+      <a href="fun.html" title="Fun Stuff"> Fun Stuff</a>
+      <a href="https://drive.google.com/file/d/1cUK7WPOxe5Ryfvh8-MFvEL_JbTl_2LQg/view?usp=sharing" target="_blank"
+         title="Resume"> Resume</a>
+      <a href="https://www.linkedin.com/in/krish-ramkumar-7876901b1" target="_blank" title="LinkedIn">LinkedIn</a>
+   </div>
+   <h2>Blog</h2>
+   <p> Here's a very nice problem that was for extra credit for my most recent math quiz.
+      We were being assessed on convergence tests for infinite series.
+      The the question was to prove that \( \sum_{n=1}^\infty \frac{2^{\ln n}}{n^2} \).
+      My first idea was that \( \sum \frac{e^{\ln n}}{n^2} = \sum \frac{1}{n}\) diverged.
+      I wanted to use limit comparison with this, but it turn out the solution is much more straightforward.
+      With the same logic, \(2^{\ln n} = ((e^{(\ln 2)}))^{\ln n} = n^{\ln 2}.\)
+      Plugging this into our sum, we now have \( \sum \frac{n^{\ln 2}}{n^2} = \sum \frac{1}{n^{2 - \ln 2}} \).
+      Since \(2 < e \rightarrow \ln 2 < 1 \rightarrow 2 - \ln 2> 1 \), this converges by the p-series test.
+   </p>
+
+</body>
+
+</html>

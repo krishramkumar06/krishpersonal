@@ -1,0 +1,72 @@
+/* html covers the whole page! */
+html {
+    background-color: #F5F5DC;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+/*Listed selectors separated by ,*/
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;  
+}
+/*Class selector starts with .*/
+.bold{
+    font-weight:bold;
+}
+/*Combined selectors */
+li.bold{
+    font-style:italic;
+}
+p.bold{
+    text-decoration:underline;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #de9263;
+    overflow: hidden;
+    display:flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .topnav {
+      flex-direction: column;
+    }
+  }
+  
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #d4ccb4;
+    color: white;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
